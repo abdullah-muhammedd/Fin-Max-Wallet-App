@@ -32,5 +32,3 @@ value double,
 date_ date,
 foreign key(user_id) references account(id)
 );
-
-select * from WD_group order by date_ limit 7
