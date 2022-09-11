@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="fm.fm.MainPage">
+    <VBox alignment="TOP_CENTER" layoutX="-1.0" prefHeight="600.0" prefWidth="250.0" spacing="10.0"
+          style="-fx-background-color: #001b48;">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <ImageView fitHeight="150.0" fitWidth="200.0">
+            <Image url="@Asset%2010.png"/>
+        </ImageView>
+        <Button mnemonicParsing="false" onAction="#accountBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Account " textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@UserIcon.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#withdrawBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Withdraw" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@withdraw.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#depositBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Deposit" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@deposit.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#aboutBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;" text="About"
+                textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@About.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+    <Button fx:id="logout_btn" layoutX="931.0" layoutY="546.0" mnemonicParsing="false" onAction="#logoutBtnOnAction"
+            rotate="180.0">
+        <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+                <Image url="@login.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Label layoutX="279.0" layoutY="59.0" text="Name:">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="278.0" layoutY="85.0" text="Balance:">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="281.0" layoutY="33.0" text="User Name:">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <LineChart fx:id="balance_chart" layoutX="283.0" layoutY="179.0" nodeOrientation="LEFT_TO_RIGHT" titleSide="BOTTOM"
+               visible="false">
+        <xAxis>
+            <CategoryAxis label="Date" side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Change In Balance (Deposit - Withdraw)" side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <TextField fx:id="text_username" editable="false" layoutX="362.0" layoutY="29.0" prefHeight="25.0" prefWidth="242.0"
+               style="-fx-background-color: transparent;">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </TextField>
+    <TextField fx:id="text_name" editable="false" layoutX="362.0" layoutY="55.0" prefHeight="25.0" prefWidth="242.0"
+               style="-fx-background-color: transparent;">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </TextField>
+    <TextField fx:id="text_balance" editable="false" layoutX="362.0" layoutY="81.0" prefHeight="25.0" prefWidth="242.0"
+               style="-fx-background-color: transparent;">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </TextField>
+    <Button fx:id="history_btn" layoutX="283.0" layoutY="129.0" mnemonicParsing="false" onAction="#historyBtnOnAction"
+            text="Balance History"/>
+    <Separator layoutX="283.0" layoutY="126.0" prefHeight="2.0" prefWidth="654.0"/>
+</AnchorPane>

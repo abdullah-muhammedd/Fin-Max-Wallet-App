@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="fm.fm.AboutPage">
+    <VBox alignment="TOP_CENTER" layoutX="-1.0" prefHeight="600.0" prefWidth="250.0" spacing="10.0"
+          style="-fx-background-color: #001b48;">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <ImageView fitHeight="150.0" fitWidth="200.0">
+            <Image url="@Asset%2010.png"/>
+        </ImageView>
+        <Button mnemonicParsing="false" onAction="#accountBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Account " textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@UserIcon.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#withdrawBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Withdraw" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@withdraw.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#depositBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Deposit" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@deposit.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#aboutBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="About" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@About.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+    <Label layoutX="261.0" layoutY="37.0" text="Designed and developed by:">
+        <font>
+            <Font size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="456.0" layoutY="39.0" text="Abdullah Muhammed">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Button layoutX="261.0" layoutY="138.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="42.0"
+            style="-fx-background-color: transparent;">
+        <graphic>
+            <Hyperlink fx:id="facebook_link" alignment="CENTER" contentDisplay="GRAPHIC_ONLY"
+                       onAction="#facebookLinkOnAction" prefHeight="23.0" prefWidth="0.0"
+                       text="https://www.facebook.com/profile.php?id=100083643485686">
+                <graphic>
+                    <ImageView>
+                        <Image url="@facebook.png"/>
+                    </ImageView>
+                </graphic>
+            </Hyperlink>
+        </graphic>
+    </Button>
+    <Button layoutX="317.0" layoutY="138.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+        <graphic>
+            <Hyperlink fx:id="linkedin_link" contentDisplay="GRAPHIC_ONLY" onAction="#linkedinLinkOnAction"
+                       text="https://www.linkedin.com/in/abdullah-muhammed-95b143216/">
+                <graphic>
+                    <ImageView>
+                        <Image url="@linkedin.png"/>
+                    </ImageView>
+                </graphic>
+            </Hyperlink>
+        </graphic>
+    </Button>
+    <Button layoutX="373.0" layoutY="138.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+        <graphic>
+            <Hyperlink fx:id="github_link" contentDisplay="GRAPHIC_ONLY" onAction="#githubLinkOnAction"
+                       text="https://github.com/abdullah-muhammedd">
+                <graphic>
+                    <ImageView>
+                        <Image url="@github.png"/>
+                    </ImageView>
+                </graphic>
+            </Hyperlink>
+        </graphic>
+    </Button>
+    <Label layoutX="261.0" layoutY="67.0" text="Email:">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="310.0" layoutY="67.0" text="dev.abdullah.muhammed@gmail.com">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="268.0" layoutY="101.0" prefHeight="17.0" prefWidth="70.0" text="Contacts:">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Separator layoutX="402.0" layoutY="193.0" prefHeight="2.0" prefWidth="393.0"/>
+</AnchorPane>

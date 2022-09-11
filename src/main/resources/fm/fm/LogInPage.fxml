@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #001b48;" xmlns="http://javafx.com/javafx/8" fx:controller="fm.fm.LogInPage">
+    <ImageView fitHeight="201.0" fitWidth="264.0" layoutX="180.0" layoutY="20.0">
+        <Image url="@Asset%204.png"/>
+    </ImageView>
+    <ImageView layoutX="188.0" layoutY="264.0">
+        <Image url="@Password%20Icon.png"/>
+    </ImageView>
+    <ImageView layoutX="188.0" layoutY="221.0">
+        <Image url="@UserIcon.png"/>
+    </ImageView>
+    <TextField layoutX="230.0" layoutY="224.0" style="-fx-background-color: d6e7ee;" fx:id="user">
+        <font>
+            <Font name="Arial" size="12.0"/>
+        </font>
+    </TextField>
+    <PasswordField layoutX="230.0" layoutY="264.0" style="-fx-background-color: d6e7ee;" fx:id="password"/>
+    <Button layoutX="244.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0"
+            style="-fx-background-color: d6e7ee;" text="Login" textFill="#001b48" fx:id="login" onAction="#LogIn">
+        <graphic>
+            <ImageView fitHeight="23.0" fitWidth="27.0">
+                <Image url="@login.png"/>
+            </ImageView>
+        </graphic>
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Label layoutX="398.0" layoutY="227.0" opacity="0.0" text="!Wrong Or Not Exist User Name" textFill="#d6e7ee"
+           fx:id="error_user">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label layoutX="398.0" layoutY="268.0" opacity="0.0" text="!Wrong Password" textFill="#d6e7ee"
+           fx:id="error_pass">
+        <font>
+            <Font name="Arial Bold" size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>

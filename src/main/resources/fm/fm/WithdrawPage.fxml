@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="fm.fm.WithdrawPage">
+    <VBox alignment="TOP_CENTER" layoutX="-1.0" prefHeight="600.0" prefWidth="250.0" spacing="10.0"
+          style="-fx-background-color: #001b48;">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <ImageView fitHeight="150.0" fitWidth="200.0">
+            <Image url="@Asset%2010.png"/>
+        </ImageView>
+        <Button mnemonicParsing="false" onAction="#accountBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Account " textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@UserIcon.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#withdrawBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Withdraw" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@withdraw.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#depositBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="Deposit" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@deposit.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#aboutBtnOnAction" prefHeight="80.0" prefWidth="200.0"
+                style="-fx-background-color: #001b48; -fx-border-color: #d6e7ee; -fx-border-radius: 20;"
+                text="About" textFill="#d6e7ee">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <graphic>
+                <ImageView>
+                    <Image url="@About.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+    <Label layoutX="271.0" layoutY="219.0" prefHeight="27.0" prefWidth="79.0" text="Value:">
+        <font>
+            <Font name="Arial" size="24.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="value" layoutX="350.0" layoutY="220.0" prefHeight="25.0" prefWidth="184.0"/>
+    <Button fx:id="done" layoutX="409.0" layoutY="306.0" mnemonicParsing="false" onAction="#doneBtnOnAction"
+            text="Done"/>
+    <DatePicker fx:id="date" layoutX="350.0" layoutY="255.0" prefHeight="25.0" prefWidth="184.0"/>
+    <Label layoutX="271.0" layoutY="254.0" prefHeight="27.0" prefWidth="79.0" text="Date">
+        <font>
+            <Font name="Arial" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="done_label" layoutX="402.0" layoutY="354.0" opacity="0.0" prefHeight="27.0" prefWidth="59.0"
+           text="Done" textFill="#e40000">
+        <font>
+            <Font name="Arial" size="24.0"/>
+        </font>
+    </Label>
+    <TableView fx:id="table" layoutX="606.0" layoutY="64.0" prefHeight="525.0" prefWidth="366.0">
+        <columns>
+            <TableColumn fx:id="value_column" prefWidth="183.0" text="Value"/>
+            <TableColumn fx:id="date_column" prefWidth="182.0" text="Date"/>
+        </columns>
+    </TableView>
+    <Separator layoutX="562.0" layoutY="94.0" orientation="VERTICAL" prefHeight="413.0" prefWidth="2.0"/>
+    <Label layoutX="606.0" layoutY="24.0" prefHeight="27.0" prefWidth="90.0" text="History:">
+        <font>
+            <Font name="Arial" size="24.0"/>
+        </font>
+    </Label>
+</AnchorPane>
