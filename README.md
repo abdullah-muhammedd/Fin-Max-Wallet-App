@@ -1,4 +1,4 @@
-![Banner](https://www.canva.com/design/DAFYbI4Pe-M/hgueo_gb42W3UHFQ-eLsxA/edit?utm_content=DAFYbI4Pe-M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+![Banner](https://www.canva.com/design/DAFYbI4Pe-M/z1m7H3NGL6qssdxpTe5nQQ/view?utm_content=DAFYbI4Pe-M&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
 
 # Fin Max 💸
 ![](https://img.shields.io/tokei/lines/github/abdullah-muhammedd/Fin-Max-Wallet-App)
